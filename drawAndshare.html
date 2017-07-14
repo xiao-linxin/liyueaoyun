@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <title>抽奖和分享</title>
+    <link rel="stylesheet" href="styles/drawAndshare/style.css">
+    <script src="scripts/common/jquery.min.js"></script>
+</head>
+
+<body ng-app="publicApp" ng-controller="myCtrl">
+<!--顶部工具栏-->
+<div class="globalHeader">
+    里约奥运会
+    <img id="goBack" src="images/common/arrow_left_alt1.jpg" alt="">
+    <img id="share" ng-click="shareBtn()" src="images/common/share_img.png" alt="">
+</div>
+<!--loading-->
+<div class="loading" id="loading">
+    <img src="images/common/loading.gif">
+</div>
+<!--主体-->
+<div class="bg">
+    <img src="images/common/blackground.png" alt="">
+    <div class="top_tips" id="tips1">您的答题正确率为<label style="color: #BA6D62">{{num}}%</label>,太棒了!</div>
+    <div class="top_tips" id="tips2">您的答题正确率为<label style="color: #BA6D62">{{num}}%</label>,知识不足,手气来补,抽奖分享去吧~</div>
+    <div class="top_tips" id="tips3">哎唷~您的运动知识储备不足无法参加抽奖呢,把我分享给更多人吧~</div>
+    <img class="drawClick" id="draw" ng-click="show_Information_fill()" src="images/drawAndshare/draw.png">
+    <img class="shareClick" id="share1" ng-click="shareBtn()" src="images/drawAndshare/share.png">
+    <img class="shareClick" id="share2" ng-click="shareBtn()" src="images/drawAndshare/share2.png">
+    <div class="Award_bg" id="Award_bg">
+        <div class="Award_bg_1">
+            <img class="Prize" id="Prize1" src="images/drawAndshare/Award/Award_bg.png">
+            <!--<img class="Award_main" id="Award_main" src="images/drawAndshare/Award/Winning_10yuan.png" alt="">-->
+            <img class="Award_main" id="Award_main" src="images/drawAndshare/TorF1.png" alt="">
+        </div>
+    </div>
+    <!--抽奖资格:无-->
+    <img class="Prize" id="Prize2" src="images/drawAndshare/result.png">
+    <div class="Publicity_column">
+        <div class="mgm403_list_roll" id="List_bg">
+            <div class="myscroll">
+                <ul>
+                    <li ng-repeat="info in show_user_info">
+                        <div class="name">{{info.nickUser}}</div>
+                        <div class="phone">{{info.phone}}</div>
+                        <div class="userPrize">{{info.awardName.substring()}}</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--信息填写弹窗-->
+<div class="Information_fill_Popup" id="Information_fill_Popup">
+    <div class="main_bg">
+        <img class="main_bg_img" src="images/drawAndshare/popup/blackground.png" alt="">
+        <img class="close" ng-click="closePopup()" src="images/drawAndshare/popup/error.png" alt="">
+        <img class="popupTips" src="images/drawAndshare/popup/title.png" alt="">
+        <div class="user_info">
+            <div class="name_bg">
+                <div class="name">我的姓名:</div>
+                <div class="input_name2"><input type="text" maxlength="10" ng-blur="name_cheak()" id="name"></div>
+                <div class="sexy">
+                    <div class="sexy_man" id="sexy_man" ng-click="man()">
+                        <div>先生</div>
+                    </div>
+                    <div class="sexy_gril" id="sexy_gril" ng-click="gril()">
+                        <div>女士</div>
+                    </div>
+                </div>
+            </div>
+            <div class="name_bg">
+                <div class="name">手机号码:</div>
+                <div class="input_name"><input type="tel" maxlength="11" ng-blur="phone_cheak()" id="phone"></div>
+            </div>
+            <div class="name_bg">
+                <div class="name">邮寄地址:</div>
+                <div class="input_name"><input type="text" maxlength="30" id="address" placeholder="奖品会通过快递送上门呦"></div>
+            </div>
+        </div>
+        <img class="Click" ng-click="submit()" id="draw_click" src="images/drawAndshare/popup/click.png"/>
+    </div>
+</div>
+
+<!--失败弹窗-->
+<div class="Error" id="Error">
+    <div class="main_bg">
+        <img class="main_bg_img" src="images/drawAndshare/popup/blackground.png" alt="">
+        <img class="close" ng-click="know_btn()" id="close_error_Popup" src="images/drawAndshare/popup/error.png"
+             alt="">
+        <img class="sorry" src="images/drawAndshare/popup/yihan/sorry.png" alt="">
+        <div class="tips_font">您在本次抽奖之中与奖品<br>失之交臂了,不要灰心,请继续关注我们健康管理活动,丰富大奖约定您!</div>
+        <img class="know_btn" ng-click="know_btn()" src="images/drawAndshare/popup/yihan/know.png" alt="">
+        <img class="share_btn" ng-click="shareBtn()" src="images/drawAndshare/popup/yihan/share2.png" alt="">
+    </div>
+</div>
+
+<!--成功弹窗-->
+<div class="success" id="success">
+    <div class="main_bg">
+        <img class="main_bg_img" src="images/drawAndshare/popup/blackground.png" alt="">
+        <img class="close" ng-click="know_btn()" id="close_Success_Popup" src="images/drawAndshare/popup/error.png"
+             alt="">
+        <img class="successimg" src="images/drawAndshare/popup/Congratulations.png" alt="">
+        <div class="tips_font">本次抽奖您抽中了<label style="color: #B05549">{{award}}</label> !<br>请保持通话畅通,奖品在活动结束之后15个工作日之内派出,敬请耐心等待。
+        </div>
+        <img class="know_btn" ng-click="know_btn()" src="images/drawAndshare/popup/button.png" alt="">
+        <img class="bottom_tips" src="images/drawAndshare/popup/info.png" alt="">
+    </div>
+</div>
+
+<!--提示框-->
+<div class="tips" id="tips_popup">
+    {{tips_Msg}}
+</div>
+
+<script src="scripts/common/angular.min.js"></script>
+<script src="scripts/drawAndshare/scroll.js"></script>
+<script src="scripts/drawAndshare/validation.js"></script>
+<!--<script src="scripts/common/main.js"></script>-->
+<script src="scripts/drawAndshare/logic.js"></script>
+<script>
+    window.onload = setTimeout(function () {
+        $('.myscroll').myScroll({
+            speed: 40, //数值越大，速度越慢
+            rowHeight: 26 //li的高度
+        })
+        document.getElementById('List_bg').style.display = "block";
+    }, 3000);
+
+
+</script>
+</body>
+</html>

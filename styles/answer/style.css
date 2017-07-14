@@ -1,0 +1,149 @@
+body {
+    background: url("../../images/common/blackground.png");
+    background-size: 100% 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container .title {
+    width: 100%;
+    margin-top: 2.7em;
+    position: relative;
+}
+
+.container .title .rightButton {
+    width: 3.5em;
+    height: 3.5em;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+.container .title img {
+    width: 100%;
+}
+
+.container .content {
+    width: 100%;
+    padding-top: 1em;
+}
+
+.container .content img {
+
+}
+
+.content .contentTitle {
+    width: 100%;
+
+}
+
+.content .contentTitle .titleText {
+    text-align: left;
+    line-height: 1.8;
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+    margin-top: 0.2em;
+}
+
+.content .contentTitle img {
+    width: 100%;
+}
+
+.content .contentBody {
+    width: 100%;
+    height: 14em;
+    padding: 0.3em 0 2em 0;
+}
+
+.content .contentBody img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .contentBody .leftWrap {
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.content .contentBody .leftWrap ul {
+    width: 100%;
+    height: 100%;
+}
+
+.content .contentBody .leftWrap .optionA {
+    width: 90%;
+    height: 4em;
+    float: left;
+}
+
+.content .contentBody .leftWrap .optionB {
+    width: 90%;
+    height: 4em;
+    float: left;
+    margin-top: 1em;
+
+}
+
+.content .contentBody .leftWrap .optionC {
+    width: 90%;
+    height: 4em;
+    float: left;
+    margin-top: 1em;
+
+}
+
+.content .contentBody .rightWrap {
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.content .contentBody .rightWrap .button {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

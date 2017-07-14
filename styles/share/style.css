@@ -1,0 +1,50 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    display: block;
+    width: 0.1px;
+    height: 0.1px;
+}
+
+.share_background{
+    position: relative;
+    width: 100%;
+
+}
+.share_background .bg{
+    width: 100%;
+    display:block;
+}
+
+.left_btn{
+    position: absolute;
+    top:89.3%;
+    width: 37%;
+    left: 6%;
+}
+
+.right_btn{
+    position: absolute;
+    top:89.3%;
+    width: 44%;
+    right: 7%;
+}
+
+.share_tips {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    display: none;
+    z-index: 5;
+    height: 100%;
+}
+
+.share_tips img {
+    height: 100%;
+}

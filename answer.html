@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <meta name=description content=>
+    <meta name=viewport
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>里约奥运答题页</title>
+    <link rel=stylesheet href=styles/common/reset.css>
+    <link rel=stylesheet href=styles/common/main.css>
+    <link rel=stylesheet href=styles/answer/style.css>
+
+</head>
+
+<body class="globalBackground">
+<!--顶部工具栏-->
+<div class="globalHeader">
+    里约奥运会
+    <img id="goBack" src="images/common/arrow_left_alt1.jpg" alt="">
+    <img id="share" onclick="shareBtn()" src="images/common/share_img.png" alt="">
+</div>
+<!--答题页主界面-->
+<div class="container">
+    <div class="title">
+        <img src="images/common/title_think.png" alt="">
+        <div class="rightButton"></div>
+    </div>
+
+    <div class="content">
+        <div class="contentTitle">
+            <img id="contentTitleImg" src="images/common/answer_title.png" alt="">
+            <div class="titleText"></div>
+        </div>
+
+        <div class="contentBody">
+            <div class="leftWrap">
+                <ul>
+                    <li class="optionA">
+                        <img src="" alt="">
+                    </li>
+                    <li class="optionB">
+                        <img src="" alt="">
+                    </li>
+                    <li class="optionC">
+                        <img src="" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="rightWrap">
+                <img class="button" src="images/common/button_sure.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!--活动说明弹窗-->
+<div class="activity_description globalUnderside">
+    <div class="noticePopUp">
+        <img class="close_noticePopUp" src="images/index/close_noticePopUp.png" alt="">
+        <div class="globalClear"></div>
+        <img class="text_noticePopUp" src="images/index/text_noticePopUp.png" alt="">
+        <img class="button_noticePopUp" src="images/index/button_noticePopUp.png" alt="">
+    </div>
+</div>
+
+<!--网络请求错误模块-->
+<div class="globalNetworkError" id="globalNetworkError">
+    <div class="content">
+        <div class="text">对不起，网络不见了</div>
+        <div class="buttonHolder">
+            <img class="cancel" src="images/common/cancel.png" alt="">
+            <img class="reload" src="images/common/reload.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!--提示语弹窗-->
+<div class="tipsPopupBg">
+    <div class="tipsPopup">
+        <div id="msg"></div>
+    </div>
+</div>
+
+<!--loading遮罩-->
+<div class="globalLoading" id="loading">
+    <img src="images/common/loading.gif">
+</div>
+
+</body>
+
+<script src="scripts/common/jquery.min.js"></script>
+<script src="scripts/common/EventEmitter.js"></script>
+<script src="scripts/common/imagesloaded.js"></script>
+<script src=scripts/common/main.js></script>
+<script src=scripts/common/post.js></script>
+<script src=scripts/answer/logic.js></script>
+
+</html>

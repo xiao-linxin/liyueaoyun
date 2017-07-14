@@ -1,0 +1,68 @@
+html {
+}
+
+body {
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+button,
+textarea,
+p,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+button {
+    border: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:link,
+:visited {
+    text-decoration: none;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    text-indent: 5px;
+    outline: 0;
+}

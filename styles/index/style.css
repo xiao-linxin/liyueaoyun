@@ -1,0 +1,172 @@
+body {
+    background: url("../../images/common/blackground.png");
+    background-size: 100% 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 85%;
+    margin: 2em auto 0 auto;
+    text-align: center;
+}
+
+.container .title {
+    width: 100%;
+    margin-top: 2.7em;
+    position: relative;
+}
+
+.container .title .rightButton {
+    width: 3.5em;
+    height: 3.5em;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+.container .title img {
+    width: 100%;
+}
+
+.container .content {
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+.container .content img {
+    width: 49.7%;
+    margin-bottom: 0.5%;
+}
+
+.container .content .firstFloor {
+    width: 100%;
+
+}
+
+.container .content .secondFloor {
+    width: 100%;
+
+}
+
+.container .content .thirdFloor {
+    width: 100%;
+
+}
+
+.container .content .head {
+
+}
+
+.container .content .shoulder {
+
+}
+
+.container .content .knee {
+
+}
+
+.container .content .lumbar {
+
+}
+
+.container .content .fat {
+
+}
+
+.container .content .ankle {
+
+}
+
+.container .footer {
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.container .footer img {
+    width: 100%;
+}
+
+.container .footer .notice {
+    display: none;
+    margin: 1em auto 1.5em;
+    width: 95%;
+
+}
+
+.container .footer .wrong {
+    display: none;
+
+}
+
+.container .footer .top {
+    display: none;
+}
+
+.container .footer .bottom {
+    display: none;
+    padding-bottom: 1em;
+}
+
+.container .footer .remainder {
+    display: none;
+    padding-bottom: 1em;
+}
+
+.globalUnderside .noticePopUp {
+    width: 80%;
+    background: url(../../images/common/blackground_popUp.png);
+    background-size: 100% 100%;
+    margin: 20% auto 0;
+    text-align: center;
+}
+
+.globalUnderside .noticePopUp .close_noticePopUp {
+    float: right;
+    width: 1.5em;
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+.globalUnderside .noticePopUp .text_noticePopUp {
+    width: 90%;
+}
+
+.globalUnderside .noticePopUp .button_noticePopUp {
+    width: 70%;
+    margin: 1em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

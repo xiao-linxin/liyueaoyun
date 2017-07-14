@@ -1,0 +1,181 @@
+html, body {
+    width: 100%;
+    /*height: 100%;*/
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+/*new porject*/
+.globalFloatLeft {
+    float: left;
+}
+
+.globalFloatRight {
+    float: right;
+}
+
+.globalClear {
+    clear: both;
+}
+
+/*底部背景*/
+.globalUnderside {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    display: none;
+}
+
+.globalUnderside .noticePopUp {
+    width: 80%;
+    background: url(../../images/common/blackground_popUp.png);
+    background-size: 100% 100%;
+    margin: 20% auto 0;
+    text-align: center;
+}
+
+.globalUnderside .noticePopUp .close_noticePopUp {
+    float: right;
+    width: 1.5em;
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+.globalUnderside .noticePopUp .text_noticePopUp {
+    width: 90%;
+}
+
+.globalUnderside .noticePopUp .button_noticePopUp {
+    width: 70%;
+    margin: 1em 0;
+}
+
+/*topBar*/
+.globalHeader {
+    /*display: none;*/
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: -3em auto 0;
+    height: 3.5em;
+    width: 100%;
+    line-height: 3.5em;
+    position: fixed;
+    z-index: 10;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.globalHeader #goBack {
+    position: absolute;
+    top: 1em;
+    left: 0.5em;
+    width: 1.5em;
+}
+
+.globalHeader #share{
+    position: absolute;
+    top: 1.6em;
+    right: 0.5em;
+    width: 1.9em;
+}
+
+/*loading*/
+.globalLoading {
+    height: 100%;
+    background-color: rgba(15, 15, 15, 0.95);
+    width: 100%;
+    /*display: none;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.globalLoading img {
+    margin-top: 58%;
+    width: 16%;
+    margin-left: 42%;
+}
+
+/*全局网络错误弹窗*/
+.globalNetworkError {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 999;
+}
+
+.globalNetworkError .content {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    text-align: center;
+}
+
+.globalNetworkError .content .text {
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+
+}
+
+.globalNetworkError .content .buttonHolder {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    padding-top: 3em;
+}
+
+.globalNetworkError .content .cancel {
+    width: 47%;
+    float: left;
+}
+
+.globalNetworkError .content .reload {
+    width: 47%;
+    float: right;
+}
+
+/*请求响应提示框*/
+.tipsPopupBg {
+    position: fixed;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 200;
+}
+
+.tipsPopup {
+    margin-top: 70%;
+    width: 70%;
+    margin-left: 12%;
+    background-color: white;;
+    border: 2px dashed #5AB54A;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* i5 */
+@media screen and (max-width: 385px) {
+    body {
+        font-size: 0.95em;
+    }
+
+}

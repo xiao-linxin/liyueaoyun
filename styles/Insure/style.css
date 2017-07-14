@@ -1,0 +1,449 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #D7CDC7;
+}
+
+input{
+    border: 0;
+    border-radius: 4px;
+    height: 77%;
+    width: 89%;
+    font-size: 0.8em;
+}
+
+input {
+    -webkit-appearance:none; /*去除input默认样式*/
+    outline: none;
+}
+
+.Insure_bg{
+    width: 100%;
+    position: relative;
+}
+
+.Insure_bg .bg{
+    width: 100%;
+}
+
+.Insure_bg .top_tips{
+    position: absolute;
+    top: 15%;
+    width: 80%;
+    left: 10%;
+}
+
+.Insure_bg .input_info{
+    position: absolute;
+    top: 43%;
+    width: 80%;
+    left: 10%;
+    height: 25%;
+}
+
+.input_info .input_info_bg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.input_name{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+}
+
+.input_name .namg{
+    padding-top: 2%;
+    float: left;
+    width: 34%;
+
+}
+.input_name .input{
+    float: left;
+    width: 65%;
+    height: 100%;
+    border: 1px solid #cccccc;
+    background-color: white;
+    border-radius: 4px;
+}
+
+
+.input_id{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 20%;
+}
+
+.input_id .namg{
+    padding-top: 2%;
+    float: left;
+    width: 34%;
+
+}
+.input_id .input{
+    float: left;
+    width: 65%;
+    height: 100%;
+    border: 1px solid #cccccc;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.input_mobile{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20%;
+}
+
+.input_mobile .namg{
+    padding-top: 2%;
+    float: left;
+    width: 34%;
+    height: 10%;
+
+}
+.input_mobile .input{
+    float: left;
+    width: 65%;
+    height: 100%;
+    border: 1px solid #cccccc;
+    background-color: white;
+    border-radius: 4px;
+}
+
+
+.input_email{
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    height: 20%;
+}
+
+
+.input_email .namg{
+    padding-top: 2%;
+    float: left;
+    width: 34%;
+}
+.input_email .input{
+    float: left;
+    width: 65%;
+    height: 100%;
+    border: 1px solid #cccccc;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.input .tOrF{
+    position: absolute;
+    right: 2%;
+    top: 26%;
+    width: 6%;
+
+}
+
+.isRead{
+    position: absolute;
+    top: 69%;
+    width: 80%;
+    left: 10%;
+}
+
+.isRead .trueOrFalse{
+    float: left;
+    width: 24px;
+}
+
+.isRead .trueOrFalse img{
+    width: 18px;
+}
+
+.isRead .font_tips{
+    float: left;
+}
+
+.commitAndMoney{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 75%;
+}
+.commitAndMoney .money{
+    width: 100%;
+    text-align: center;
+}
+.commitAndMoney .commit{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 7%;
+}
+
+
+/*成功弹窗*/
+.success{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.success .main_bg{
+    width: 84%;
+    position: relative;
+    top: 20%;
+    left: 8%;
+
+}
+.success .main_bg .main_bg_img{
+    width: 100%;
+}
+
+.success .main_bg  .top_title{
+    position: absolute;
+    top: 10%;
+    width: 70%;
+    left: 15%;
+}
+
+.success .main_bg  .close{
+    position: absolute;
+    top: 2%;
+    width: 8%;
+    right: 2%;
+}
+
+.success .main_bg .font_tips{
+    position: absolute;
+    width: 88%;
+    left: 6%;
+    top: 36%;
+    line-height: 22px;
+    text-align: center;
+    font-size: 1em;
+    color: #5A5A5A;
+}
+
+.success .main_bg .success_btn{
+    top: 64%;
+    position: absolute;
+    left: 15%;
+    width: 70%;
+}
+.success .main_bg .share_btn{
+    top: 80%;
+    position: absolute;
+    left: 15%;
+    width: 70%;
+}
+
+/*成功弹窗*/
+.error{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.error .main_bg{
+    width: 84%;
+    position: relative;
+    top: 20%;
+    left: 8%;
+
+}
+.error .main_bg .main_bg_img{
+    width: 100%;
+}
+
+.error .main_bg  .top_title{
+    position: absolute;
+    top: 10%;
+    width: 70%;
+    left: 15%;
+}
+
+.error .main_bg  .close{
+    position: absolute;
+    top: 2%;
+    width: 8%;
+    right: 2%;
+}
+
+.error .main_bg .font_tips{
+    position: absolute;
+    width: 88%;
+    left: 6%;
+    top: 36%;
+    line-height: 22px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #5A5A5A;
+}
+
+.error .main_bg .error_btn{
+    top: 64%;
+    position: absolute;
+    left: 15%;
+    width: 70%;
+}
+.error .main_bg .share_btn{
+    top: 80%;
+    position: absolute;
+    left: 15%;
+    width: 70%;
+}
+
+/*提示框*/
+.tips{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.83);
+    z-index: 150;
+    width: 54%;
+    left: 23%;
+    display: none;
+    color: white;
+    top: 55%;
+    /*margin-top: 40%;*/
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+/*topBar*/
+.globalHeader {
+    /*display: none;*/
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 0em auto 0;
+    height: 3.5em;
+    width: 100%;
+    line-height: 3.5em;
+    position: fixed;
+    z-index: 10;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.globalHeader #goBack {
+    position: absolute;
+    top: 1em;
+    left: 0.5em;
+    width: 1.5em;
+}
+
+.globalHeader #share{
+    position: absolute;
+    top: 1.6em;
+    right: 0.5em;
+    width: 1.9em;
+}
+
+/*产品阅读弹窗*/
+.popup_bg{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0%;
+}
+
+.popup_bg2{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0%;
+}
+
+.readProductPopup{
+    margin-left: 5%;
+    width: 84%;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid indianred;
+    height: 70%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; /* ios5+ */
+    -ms-overflow-y: scroll;
+    padding: 10px;
+}
+
+.close_popup{
+    margin-top: 10%;
+    width: 90%;
+    margin-left: 5%;
+    text-align: right;
+}
+
+.close_popup2{
+    margin-top: 10%;
+    width: 90%;
+    margin-left: 5%;
+    text-align: right;
+}
+
+.readProductChangeBg{
+    display: none;
+    position: fixed;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+}
+
+
+.readProductChangeBg .hui_bg{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.68);
+    z-index: 100;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.readProductChange{
+    width: 82%;
+    left: 9%;
+    top: 30%;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #F38686;
+    z-index: 101;
+    position: absolute;
+}
+
+/*loading*/
+.loading{
+    height: 100%;
+    background-color: rgba(15, 15, 15, 0.68);
+    width: 100%;
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 100;
+}
+.loading img{
+    margin-top: 58%;
+    width: 16%;
+    margin-left: 42%;
+}
+
